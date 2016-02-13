@@ -1,0 +1,1751 @@
+/*******************************************************
+
+               /r/runescape Style 2014
+    Coded By: /u/Kolumbz (@JokingRS) and /u/zpoon (@ZPUNl)
+             Design by Jagex Games Studio
+
+                    Special Thanks
+                 --------------------
+                 Ethaksus
+                 Lebomb
+                 Bladecom
+                 Mod Slayer
+                 LegendArts
+
+*******************************************************/
+/*---------------------------------------
+SIDEBAR
+---------------------------------------*/
+/* RULES */
+/* CREDIT TO /r/videos */
+/* Edited for use on /r/runescape */
+
+.side .md h1:nth-of-type(2){
+background-image: url(%%title%%);
+background-repeat: no-repeat;
+height: 52px;
+color: #e1bb34;
+line-height: 60px;
+text-align: center;
+font-size: 20px !important;
+text-shadow: 2px 2px 2px #000;
+margin: 0;
+}
+
+.side table:nth-of-type(5) thead {
+    display: none;
+}
+
+.side .md > p:last-of-type {
+text-align: center;
+}
+
+.side table:nth-of-type(5) {
+background-image: url(%%content-repeat%%);
+color: #e1bb34;
+border: 1px solid black;
+}
+
+.side table:nth-of-type(5) {
+list-style-type: none;
+}
+
+.side table:nth-of-type(5) a {
+font-weight: bold;
+text-decoration: underline;
+color: #d7dbe1;
+}
+
+.side table:nth-of-type(5) a:hover {
+color: #e1bb34;
+}
+
+.side table:nth-of-type(5) tbody tr {
+    display: list-item;
+}
+
+.side table:nth-of-type(5) tbody tr td {
+    display: block;
+    border: none;
+    padding: 0;
+}
+
+.side table:nth-of-type(5) tbody tr td:first-child {
+    padding: 8px;
+    transition: 200ms;
+    border-top: 1px solid #39444b;
+    border-bottom: 1px solid black;
+    background-image: url(%%arrow%%);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.side table:nth-of-type(5) tbody tr td:first-child:hover, .side table tbody tr:hover td:first-child {
+    background-color: rgba(0,0,0,0.5);
+}
+
+.side table:nth-of-type(5) tbody tr td:last-child {
+    max-height: 0;
+    color: #d7dbe1;
+    margin: 0px 5px 0px;
+    transition: 300ms ease-in-out;
+    overflow: hidden;
+}
+
+.side table:nth-of-type(5) tbody tr:hover td:last-child {
+    max-height: 200px;
+    transition: 300ms ease-in-out;
+    margin: 5px 5px 5px;
+}
+
+/* END OF RULES */
+
+/* When the user goes to message a moderator they are told we are not Jagex moderators */
+.sidecontentbox a.helplink:hover:before {
+content: "The /r/runescape moderators are NOT Jagex moderators, we cannot assist you with anything relating to your Jagex account.";
+display: block;
+position: absolute;
+margin-top: -55px;
+right: 0;
+padding: 4px;
+width: 300px;
+z-index: 1000;
+background-color: red;
+color: white;
+font-weight: bold;
+border-radius: 5px;
+font-family: Arial;
+font-size: 12px;
+}
+
+/*-----------------------HEADER-----------------------*/
+/*---------------------------------------
+ Main Properties
+---------------------------------------*/
+#header {
+position: relative;
+height: 170px;
+background-image: url(%%Invention-banner%%);
+-moz-background-size:100% 100%;
+-webkit-background-size:100% 100%;
+background-size:100% 100%;
+background-color: #0860c2;
+z-index: 100;
+}
+
+#header-bottom-left {
+height: 122px;
+}
+
+#header-img {
+position: absolute;
+display: inline-block;
+top: 30px;
+left: 110px;
+z-index: 105;
+}
+
+#header .pagename {
+font-size: 0px;
+}
+
+#header .pagename a {
+position: absolute;
+display: block;
+top: 18px;
+left: 170px;
+height: 100px;
+z-index: 106;
+padding: 0px 0px 0px 0px;
+background: transparent url(%%rslogo-invention%%);
+width: 341px;
+}
+
+/* NO HOVER AVAILABLE YET
+#header .pagename a:hover {
+background-image:url();
+}*/
+
+/*---------------------------------------
+Top bar and user bar - NON RES
+---------------------------------------*/
+#sr-header-area, .res-nightmode #sr-header-area {
+background-color: rgba(0,0,0,0.4);
+border-bottom: thin solid #315274;
+-webkit-box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+-moz-box-shadow:    0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+box-shadow:         0px 1px 0px 0px rgba(255, 255, 255, 0.3);
+}
+
+#header-bottom-right, .res-nightmode #header-bottom-right {
+background-color: rgba(0,0,0,0.4);
+margin-bottom: 48px;
+-webkit-border-radius: 0 !important;
+-moz-border-radius: 0 !important;
+border-radius: 0 !important;
+padding: 8px;
+padding-right: 24px;
+z-index: 200;
+}
+
+#header-bottom-right a {
+color: #e1bb34 !important;
+}
+
+#header-bottom-right .userkarma, #header-bottom-right .user, .separator {
+color: white !important;
+}
+
+.width-clip *{
+color: white !important;
+text-shadow: 1px 1px 0px rgba(73, 94, 113, 0.8);
+}
+
+#sr-header-area .selected, .sr-list .selected a {
+color: #e1bb34 !important;
+font-weight: bold;
+text-shadow: 1px 1px 0px rgba(73, 94, 113, 0.8);
+}
+
+.sr-list a:hover {
+color: #e1bb34 !important;
+}
+
+#sr-more-link {
+background-color: rgba(0,0,0,0.8) !important;
+}
+
+/*---------------------------------------
+Top bar and user bar - RES
+---------------------------------------*/
+#srDropdownContainer a{
+color: #e1bb34 !important;
+font-weight: bold;
+text-shadow: 1px 1px 0px rgba(73, 94, 113, 0.8);
+}
+
+#RESShortcutsViewport, .srSep {
+color: white;
+}
+
+#header-bottom-right {
+margin-top: 8px;
+}
+
+#header-bottom-right a{
+color: white !important;
+}
+
+#header-bottom-right a:hover{
+color: #e1bb34 !important;
+}
+
+#userbarToggle.userbarHide {
+background-color: rgba(0,0,0,0.5) !important;
+-webkit-border-radius: 0 !important;
+-moz-border-radius: 0 !important;
+border-radius: 0 !important;
+border: 0;
+margin-left: 6px;
+color: white !important;
+}
+
+#userbarToggle.userbarShow {
+background-color: rgba(0,0,0,0.8) !important;
+-webkit-border-radius: 0 !important;
+-moz-border-radius: 0 !important;
+border-radius: 0 !important;
+border: 0;
+margin: 0 !important;
+color: white !important;
+}
+
+.user {
+padding-left: 6px;
+}
+
+#RESShortcuts a, #RESStaticShortcuts a {
+color: white !important;
+text-shadow: 1px 1px 0px rgba(73, 94, 113, 0.8);
+}
+
+#RESShortcuts a:hover, #RESStaticShortcuts a:hover {
+color: #e1bb34 !important;
+}
+
+#RESShortcutsEditContainer > div, #RESShortcutsEditContainer{
+background-color: rgba(0,0,0,0.5) !important;
+color: white !important;
+}
+/*---------------------------------------
+Tab Menu/Navigation
+---------------------------------------*/
+
+#header .tabmenu {
+position: absolute;
+z-index: 100;
+left: 0;
+top: 71px;
+margin: 0;
+padding: 0;
+width: 100%;
+background: url(%%nav-bg-start%%), url(%%nav-bg%%);
+background-repeat: no-repeat, repeat-x;
+background-position: 0 50px;
+}
+
+#header .tabmenu li
+{
+position: relative;
+display: table-cell;
+height: 31px;
+padding-top: 69px;
+}
+
+#header .tabmenu li:nth-of-type(n+4) {
+background: transparent url(%%nav-bg%%) repeat-x;
+background-position: 0 50px;
+}
+
+
+#header .tabmenu li:first-child{
+padding-left: 34px;
+}
+
+#header .tabmenu li:first-child:before{
+content: " ";
+position: absolute;
+left: 0;
+top: 0;
+border-style: solid;
+border-width: 100px 0 0 30px;
+-moz-border-image: url(%%nav-left%%) 100 30;
+-webkit-border-image: url(%%nav-left%%) 100 30;
+-o-border-image: url(%%nav-left%%) 100 30;
+border-image: url(%%nav-left%%) 100 30;
+}
+
+#header .tabmenu li:first-child:after {
+content: " ";
+position: absolute;
+top: 4px;
+left: 0;
+border-style: solid;
+border-width: 47px 0 0 199px;
+-moz-border-image: url(%%nav-top%%) 47 199;
+-webkit-border-image: url(%%nav-top%%) 47 199;
+-o-border-image: url(%%nav-top%%) 47 199;
+border-image: url(%%nav-top%%) 47 199;
+}
+
+#header .tabmenu li:last-child {
+width: 100% !important;
+border-style: solid;
+border-width: 0 30px 0 0;
+-moz-border-image: url(%%nav-right%%) 0 30;
+-webkit-border-image: url(%%nav-right%%) 0 30;
+-o-border-image: url(%%nav-right%%) 0 30;
+border-image: url(%%nav-right%%) 0 30;
+}
+
+#header .tabmenu li a {
+text-transform: uppercase;
+background-color: transparent;
+color: #dab830;
+padding: 0px 12px;
+}
+
+#header .tabmenu li a:hover {
+color: white;
+}
+
+#header .tabmenu li.selected a{
+border: 0;
+color: white;
+}
+
+#header .tabmenu li.selected:nth-child(n+1) a{
+border-left: thin solid #50595e;
+-webkit-box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.6);
+-moz-box-shadow:    -1px 0px 0px 0px rgba(0, 0, 0, 0.6);
+box-shadow:         -1px 0px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+#header .tabmenu li a{
+padding-top: 17px;
+padding-bottom: 14px;
+border-left: thin solid #50595e !important;
+-webkit-box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.6) !important;
+-moz-box-shadow:    -1px 0px 0px 0px rgba(0, 0, 0, 0.6) !important;
+box-shadow:         -1px 0px 0px 0px rgba(0, 0, 0, 0.6) !important;
+}
+
+#header .tabmenu li:first-child a{
+border-left: none !important;
+-webkit-box-shadow: none !important;
+-moz-box-shadow:    none !important;
+box-shadow:         none !important;
+}
+
+.flairselector.drop-choices {
+background-color: white !important;
+}
+
+.drop-choices {
+z-index: 1000;
+background-color: rgba(0,0,0,0.7);
+}
+
+.drop-choices a:hover{
+background-color: rgba(255,255,255,0.7) !important;
+}
+
+/*------------------------------------
+EVENTS - ***NEW***  Edit .side h3 background to change picture!
+------------------------------------*/
+.side {
+padding-top:190px;
+margin: 0;
+}
+
+.side .md {
+font-size: 12px;
+}
+
+.side .md h1 {
+font-weight: bold;
+font-size: 16px;
+}
+
+/* .side .md h2:nth-of-type(1) {
+top: 60px;
+left: 545px;
+background-image: url(%%clock%%);
+ background-repeat: no-repeat;
+display: block;
+position: absolute;
+z-index: 500;
+height: 30px;
+color: #FFCB45;
+font: 11px Arial,"Times New Roman",serif;
+line-height: 21px;
+    margin: 0pt;
+    padding: 3px 0px 5px 8px;
+    width: 450px;
+   font-size: 14px;
+text-shadow: 0px 1px black;
+}
+
+*/
+
+.side .md {
+    overflow: hidden;
+}
+
+.side .md h2:nth-of-type(1):hover:before {
+	content: "In-game UTC time, updates upon page refresh.";
+	position: absolute; display: block; margin-top: -8px; margin-left: 50px; padding: 5px; width: 240px; border: 1px solid #333;
+	background: #1d1212; color: #f6f6f6; font-size: 11px; text-align: center; z-index: 1000; overflow: hidden; }
+
+	/* DXP NOTIFICATION (for stuff like DXP weekends) */
+/* Example text to be put in sidebar: ##### ★ **Double Weapon XP** is currently on now! (Fri 10AM PST - Mon 10AM PST) */
+
+.side h2:nth-of-type(2) {
+top: 55px;
+left: 600px;
+background-image: url(%%xpbar%%);
+ background-repeat: no-repeat;
+display: block;
+position: absolute;
+z-index: 500;
+height: 30px;
+color: black;
+font-size: 11px;
+line-height: 20px;
+    margin: 0pt;
+    padding: 8px 85px 5px 55px;
+text-shadow: 0px 1px #f9df95;
+overflow: hidden;
+}
+
+a[href^="#bolder"] + em {
+    font-weight: 800;
+}
+
+.side .md h3{
+    background: #05090b url(%%twitchthumb%%) no-repeat 45% 75%;
+    width:268px;
+    height:140px;
+    position:absolute;
+    top:210px;
+    right:23px;
+    font-weight:normal;
+    font-size:14px;
+    font-family:arial;
+    color: #eaeaea;
+    z-index: 450;
+    opacity: 0.95;
+}
+
+.side .md h4{
+    background: url(%%twitch%%) no-repeat;
+    width:277px;
+    height:37px;
+    position:absolute;
+    top:180px;
+    right: 2px;
+    padding:147px 0 0 32px;
+    font-weight:normal;
+    font-size:12px;
+    font-family:arial;
+    z-index: 500;
+    color:#eaeaea;
+}
+.side .md h5{
+    position:absolute;
+    top:184px;
+width: 100px;
+    right: 175px;
+    padding:43px 0 0 0px;
+    font-weight:bold;
+    font-size:15px;
+    font-family:arial;
+    z-index: 500;
+    color:#eaeaea;
+text-shadow: 1px 1px 0px #000;
+}
+
+.side .md h6{
+    position:absolute;
+    top:187px;
+    right: 175px;
+width: 100px;
+    padding:59px 0 0 0px;
+    font-weight:normal;
+    font-size:12px;
+    font-family:arial;
+    text-decoration: none;
+    z-index: 500;
+    color:#eaeaea;
+text-shadow: 1px 1px 0px #000;
+}
+
+.side .md h4 a {
+    color: #eaeaea
+    }
+.side .md h4 a:hover {
+    color: #f3b13f
+    }
+
+/* SPOILER */
+
+.linkflair-red .thumbnail{
+    background-image: url(%%spoiler2%%) !important;
+    background-repeat:no-repeat!important;
+    height:0!important;
+    width:0!important;
+    padding:68px 0 0 69px!important;
+}
+
+/* HEADER */
+
+/* make the "give gold" linke golden */
+.give-gold {color: #9A7D2E !important;}
+
+body:not(.moderator) .flairselector .linkflair-green { display: none; }
+body:not(.moderator) .flairselector .linkflair-alert { display: none; }
+
+.side .titlebox .redditname { display:block; margin: 0 auto 0 auto; margin-top: 20px; width: 250px; height:68px; padding: 5px;font-size: 0px;background:transparent url(%%RS3-Logo%%) no-repeat 0px 0px;}
+
+.side .submit .morelink {
+    display:block;
+    width: 293px;
+    height: 50px;
+    margin: 0 auto 0 auto;
+    margin-bottom: -10px;
+    padding: 0;
+    background: transparent url(%%submit%%) no-repeat 0px 0px;
+    border:none;
+}
+
+.res-nightmode .side .submit, .res-nightmode .side .submit .morelink, .res-nightmode #search input {
+background-color: inherit !important;
+border: 0 !important;
+color: none !important;
+}
+
+.side .submit .morelink a{
+position:absolute;
+line-height:  45px;
+color: black;
+text-shadow: 1px 1px 1px white;
+text-transform: none;
+font-weight: bold;
+font-size:15px;
+}
+
+.side .submit .morelink a:hover{
+width: 293px;
+height: 50px;
+margin: 0 auto 0 auto;
+padding: 0;
+background: transparent url(%%submit-hover%%) no-repeat 0px 0px;
+}
+
+.nub {display:none;}
+
+.side #search input[name="q"]
+{
+text-align: center;
+    width: 293px;
+    margin: 0 auto 0 auto;
+    height: 50px;
+    padding: 0px 36px 0px;
+    background: transparent url(%%searchbar%%) repeat-x 0px 0px;
+    color: black;
+    border: none;
+}
+
+.side #search input[type="submit"] {
+display: none;
+}
+
+/* FOOTER IMAGE */
+
+.footer-parent {
+background: url(%%cuties%%) no-repeat bottom center;
+height: 600px;
+padding-top: 80px;
+padding-bottom: 40px;
+clear: both;
+text-align: center;
+width: 100%;
+margin-bottom: -1px;
+opacity: 0.8;
+}
+
+
+/* Verified safe url by /u/captainmeta4 */
+
+a[href^="runescape.com/"]:after,
+a[href^="http://runescape.com/"]:after,
+a[href^="services.runescape.com/"]:after,
+a[href^="http://services.runescape.com/"]:after,
+a[href^="secure.runescape.com/"]:after,
+a[href^="https://secure.runescape.com/"]:after,
+a[href^="support.runescape.com/"]:after,
+a[href^="https://support.runescape.com/"]:after,
+a[href^="forum.runescape.com/"]:after,
+a[href^="http://forum.runescape.com/"]:after{
+    background-image: url(%%shield-tick%%);
+    width:16px;
+    height:16px;
+    display:inline-block;
+    content:'';
+}
+
+.usertext a[href^="runescape.com/"],
+.usertext a[href^="http://runescape.com/"],
+.usertext a[href^="services.runescape.com/"],
+.usertext a[href^="http://services.runescape.com/"],
+.usertext a[href^="secure.runescape.com/"],
+.usertext a[href^="https://secure.runescape.com/"],
+.usertext a[href^="support.runescape.com/"],
+.usertext a[href^="https://support.runescape.com/"],
+.usertext a[href^="forum.runescape.com/"],
+.usertext a[href^="http://forum.runescape.com/"]{
+    background-color: #aaffaa;
+    border: 1px solid #008000;
+    border-radius: 3px;
+}
+
+a[href^="runescape.com/"].thumbnail.loggedin:after,
+a[href^="http://runescape.com/"].thumbnail.loggedin:after,
+a[href^="services.runescape.com/"].thumbnail.loggedin:after,
+a[href^="http://services.runescape.com/"].thumbnail.loggedin:after,
+a[href^="secure.runescape.com/"].thumbnail.loggedin:after,
+a[href^="https://secure.runescape.com/"].thumbnail.loggedin:after,
+a[href^="support.runescape.com/"].thumbnail.loggedin:after,
+a[href^="https://support.runescape.com/"].thumbnail.loggedin:after,
+a[href^="forum.runescape.com/"].thumbnail.loggedin:after,
+a[href^="forum.runescape.com/"].thumbnail.loggedin:after,
+a[href^="http://forum.runescape.com/"].thumbnail.loggedin:after{
+    display:none;
+}
+
+/*------------------------------------
+SUBMIT LINK
+------------------------------------*/
+/* Submit Warning - stolen from /r/AskScience */
+.sidebox.submit:hover:before {
+    position: fixed;
+    display: block;
+    top: 0;
+    text-align: center;
+    background-color: #a00;
+    color: #fff;
+    z-index: 1000;
+    padding: 5px 0;
+    width: 100%;
+    left: 0;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    content: "Read the rules before posting! The subreddit wiki has extended rules & guidelines!";
+-webkit-animation-name: blinker;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 3;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 3;
+
+    animation-name: blinker;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+    }
+
+/* SIDEBAR TEXT REPLACEMENT */
+
+div.titlebox span.word {
+display: none
+}
+
+div.titlebox span.number:after {
+content: " Gielinorians"
+}
+
+/*------------------------------------
+FLAIRS & USER MODS
+------------------------------------*/
+/* HIDE BOT MODS FROM SIDEBAR */
+.sidecontentbox:not([id="moderation_tools"]):not([id="wikiactions"]) li:nth-of-type(3) {display:none;}
+.sidecontentbox:not([id="moderation_tools"]):not([id="wikiactions"]) li:nth-of-type(7) {display:none;}
+
+/* POST MOD FLAIRS */
+.thing .tagline .author.moderator ~ .flair { display: none; }
+.thing .tagline .author.moderator {	color: white;
+					border: 1px solid gray;
+					border-radius: 0px !important;
+					background: -webkit-linear-gradient(top, limegreen, darkgreen);
+					background: -moz-linear-gradient(top, limegreen, darkgreen);
+					background: -ms-linear-gradient(top, limegreen, darkgreen);
+					background: -o-linear-gradient(top, limegreen, darkgreen);
+					background: linear-gradient(top, limegreen, darkgreen);
+				  }
+.tagline a.moderator ~ .userattrs .moderator { font-size: 0px; }
+.tagline a.moderator ~ .userattrs .moderator::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: -8px -0px;
+    background: transparent url(%%flairs%%) no-repeat -120px -48px;
+}
+
+/*------------ 4.0 Flairs ------------*/
+
+    span[class*="flair-skill-"],
+    span[class*="flair-profession-"],
+    span[class*="flair-faction-"],
+    span[class*="flair-rare-"],
+    span[class*="flair-other-"],
+    span[class*="flair-flair"],
+    span[class*="flair-user-"],
+    span[class*="flair-two-"],
+    span[class*="flair-mod-"]
+    {
+        padding: 0px 2px 0px 2px;
+        border: 1px solid gray;
+        border-radius: 0px;
+        font-weight: bold;
+        font-size: x-small;
+    }
+    span[class*="flair-skill-"]:before,
+    span[class*="flair-profession-"]:before,
+    span[class*="flair-faction-"]:before,
+    span[class*="flair-rare-"]:before,
+    span[class*="flair-other-"]:before,
+    span[class*="flair-user-"]:before,
+    span[class*="flair-two-"]:before,
+    span[class*="flair-mod-"]:before
+    {
+        content: "";
+        position: relative;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin: -8px 1px;
+        padding: 0px 0px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+    }
+    .flair:after { display:none; }
+    span[class~="flair-flair"]:before {display:none;}
+    span[class~="flair-flair"]:after { content: "Plain"; }
+    /*------------ 4.1 User Flairs ------------*/
+    .flairoptionpane li {margin: 8px;}
+    .sidecontentbox .content li {margin: 7px 0px;}
+    .flairoptionpane .flair:after { display: inline; }
+        /*------------ 4.1.1 Skills ------------*/
+        span[class*="flair-skill-"]:before { background-image: url(%%flairs%%); }
+
+	.flair-skill-agility:before { background-position: -48px -0px; }		.flair-skill-agility:after { content: "Agility"; }
+	.flair-skill-attack:before { background-position: -48px -24px; }		.flair-skill-attack:after { content: "Attack"; }
+	.flair-skill-construction:before { background-position: -48px -48px; }	.flair-skill-construction:after { content: "Construction"; }
+	.flair-skill-cooking:before { background-position: -48px -72px; }		.flair-skill-cooking:after { content: "Cooking"; }
+	.flair-skill-crafting:before { background-position: -48px -96px; }	.flair-skill-crafting:after { content: "Crafting"; }
+	.flair-skill-defence:before { background-position: -48px -120px; }	.flair-skill-defence:after { content: "Defence"; }
+	.flair-skill-dungeoneering:before { background-position: -48px -144px; }	.flair-skill-dungeoneering:after { content: "Dungeoneering"; }
+	.flair-skill-farming:before { background-position: -48px -168px; }	.flair-skill-farming:after { content: "Farming"; }
+	.flair-skill-firemaking:before { background-position: -48px -192px; }	.flair-skill-firemaking:after { content: "Firemaking"; }
+	.flair-skill-fishing:before { background-position: -48px -216px; }	.flair-skill-fishing:after { content: "Fishing"; }
+	.flair-skill-fletching:before { background-position: -48px -240px; }	.flair-skill-fletching:after { content: "Fletching"; }
+	.flair-skill-herblore:before { background-position: -48px -264px; }	.flair-skill-herblore:after { content: "Herblore"; }
+	.flair-skill-hitpoints:before { background-position: -48px -288px; }	.flair-skill-hitpoints:after { content: "Hitpoints"; }
+	.flair-skill-hunter:before { background-position: -48px -312px; }		.flair-skill-hunter:after { content: "Hunter"; }
+	.flair-skill-magic:before { background-position: -48px -336px; }		.flair-skill-magic:after { content: "Magic"; }
+	.flair-skill-mining:before { background-position: -48px -360px; }		.flair-skill-mining:after { content: "Mining"; }
+	.flair-skill-prayer:before { background-position: -48px -384px; }		.flair-skill-prayer:after { content: "Prayer"; }
+	.flair-skill-range:before { background-position: -48px -408px; }		.flair-skill-range:after { content: "Range"; }
+	.flair-skill-runecrafting:before { background-position: -48px -432px; }	.flair-skill-runecrafting:after { content: "Runecrafting"; }
+	.flair-skill-slayer:before { background-position: -48px -456px; }		.flair-skill-slayer:after { content: "Slayer"; }
+	.flair-skill-smithing:before { background-position: -48px -480px; }	.flair-skill-smithing:after { content: "Smithing"; }
+	.flair-skill-strength:before { background-position: -48px -504px; }	.flair-skill-strength:after { content: "Strength"; }
+	.flair-skill-summoning:before { background-position: -48px -528px; }	.flair-skill-summoning:after { content: "Summoning"; }
+	.flair-skill-thieving:before { background-position: -48px -552px; }	.flair-skill-thieving:after { content: "Thieving"; }
+	.flair-skill-woodcutting:before { background-position: -48px -576px; }	.flair-skill-woodcutting:after { content: "Woodcutting"; }
+	.flair-skill-divination:before { background-position: -48px -600px; }	.flair-skill-divination:after { content: "Divination"; }
+	.flair-skill-quest:before { background-position: -48px -624px; }	.flair-skill-quest:after { content: "Quests"; }
+	.flair-skill-invention:before { background-position: -48px -648px; }	.flair-skill-invention:after { content: "Invention"; }
+
+        /*------------ 4.1.2 Professions ------------*/
+        span[class*="flair-profession-"]:before { background-image: url(%%flairs%%); }
+
+	.flair-profession-artisan:before { background-position: -144px -0px; }	.flair-profession-artisan:after { content: "Artisan"; }
+	.flair-profession-combat:before { background-position: -144px -24px; }	.flair-profession-combat:after { content: "Combat"; }
+	.flair-profession-gather:before { background-position: -144px -48px; }	.flair-profession-gather:after { content: "Gather"; }
+	.flair-profession-support:before { background-position: -144px -72px; }	.flair-profession-support:after { content: "Support"; }
+	.flair-profession-member:before { background-position: -144px -96px; }	.flair-profession-member:after { content: "Member"; }
+	.flair-profession-star:before { background-position: -144px -120px; }	.flair-profession-star:after { content: "Star"; }
+
+        /*------------ 4.1.3 Factions ------------*/
+        span[class*="flair-faction-"]:before { background-image: url(%%flairs%%); }
+
+	.flair-faction-armadyl:before { background-position: -96px -0px; }	.flair-faction-armadyl:after { content: "Armadyl"; }
+	.flair-faction-bandos:before { background-position: -96px -24px; }	.flair-faction-bandos:after { content: "Bandos"; }
+	.flair-faction-godless:before { background-position: -96px -48px; }	.flair-faction-godless:after { content: "Godless"; }
+	.flair-faction-guthix:before { background-position: -96px -72px; }	.flair-faction-guthix:after { content: "Guthix"; }
+	.flair-faction-saradomin:before { background-position: -96px -96px; }	.flair-faction-saradomin:after { content: "Saradomin"; }
+	.flair-faction-seren:before { background-position: -96px -120px; }	.flair-faction-seren:after { content: "Seren"; }
+	.flair-faction-sliske:before { background-position: -96px -144px; }	.flair-faction-sliske:after { content: "Sliske"; }
+	.flair-faction-zamorak:before { background-position: -96px -168px; }	.flair-faction-zamorak:after { content: "Zamorak"; }
+	.flair-faction-zaros:before { background-position: -96px -192px; }	.flair-faction-zaros:after { content: "Zaros"; }
+	.flair-faction-brassica:before { background-position: -96px -216px; }	.flair-faction-brassica:after { content: "Brassica Prime"; }
+	.flair-faction-marimbo:before { background-position: -96px -240px; }	.flair-faction-marimbo:after { content: "Marimbo"; }
+	.flair-faction-V:before { background-position: -96px -264px; }	.flair-faction-V:after { content: "V"; }
+
+	.flair-faction-armadyl { color: #0073e5; }	.flair-faction-armadyl:after { color: #0073e5; }
+	.flair-faction-bandos { color: #6c4824; }	.flair-faction-bandos:after { color: #6c4824; }
+	.flair-faction-godless { color: #e57100; }	.flair-faction-godless:after { color: #e57100; }
+	.flair-faction-guthix { color: #009960; }	.flair-faction-guthix:after { color: #009960; }
+	.flair-faction-saradomin { color: #e5bb00; }	.flair-faction-saradomin:after { color: #e5bb00; }
+	.flair-faction-seren { color: #00e1e1; }	.flair-faction-seren:after { color: #00e1e1; }
+	.flair-faction-sliske { color: #00c000; }	.flair-faction-sliske:after { color: #00c000; }
+	.flair-faction-zamorak { color: #e50000; }	.flair-faction-zamorak:after { color: #e50000; }
+	.flair-faction-zaros { color: #5e3886; }	.flair-faction-zaros:after { color: #5e3886; }
+	.flair-faction-brassica { color: #088e45; }	.flair-faction-brassica:after { color: #088e45; }
+    .flair-faction-marimbo { color: #f04f2b; }	.flair-faction-marimbo:after { color: #f04f2b; }
+    .flair-faction-V { color: #d38b20; }	.flair-faction-V:after { color: #d38b20; }
+
+        /*------------ 4.1.4 Rares ------------*/
+	span[class*="flair-rare-"]:before { background-image: url(%%flairs%%); }
+
+	.flair-rare-whitehat:before { background-position: -24px -0px; }			.flair-rare-whitehat:after { content: "Party!"; }
+	.flair-rare-redhat:before { background-position: -24px -24px; }			.flair-rare-redhat:after { content: "Party!"; }
+	.flair-rare-yellowhat:before { background-position: -24px -48px; }		.flair-rare-yellowhat:after { content: "Party!"; }
+	.flair-rare-greenhat:before { background-position: -24px -72px; }			.flair-rare-greenhat:after { content: "Party!"; }
+	.flair-rare-bluehat:before { background-position: -24px -96px; }			.flair-rare-bluehat:after { content: "Party!"; }
+	.flair-rare-purplehat:before { background-position: -24px -120px; }		.flair-rare-purplehat:after { content: "Party!"; }
+
+	.flair-rare-ccracker:before { background-position: -24px -144px; }		.flair-rare-ccracker:after { content: "I wonder what's inside?"; }
+	.flair-rare-gcracker:before { background-position: -24px -168px; }		.flair-rare-gcracker:after { content: "It's a hammer"; }
+	.flair-rare-mcracker:before { background-position: -24px -192px; }		.flair-rare-mcracker:after { content: "It's free XP"; }
+
+	.flair-rare-redmask:before { background-position: -24px -216px; }			.flair-rare-redmask:after { content: "Boo!"; }
+	.flair-rare-greenmask:before { background-position: -24px -240px; }		.flair-rare-greenmask:after { content: "Boo!"; }
+	.flair-rare-bluemask:before { background-position: -24px -264px; }		.flair-rare-bluemask:after { content: "Boo!"; }
+
+	.flair-rare-santa:before { background-position: -24px -288px; }			.flair-rare-santa:after { content: "Happy Holidays"; }
+	.flair-rare-blacksanta:before { background-position: -24px -312px; }		.flair-rare-blacksanta:after { content: "Exclusive Model only 19.99"; }
+
+	.flair-rare-pumpkin:before { background-position: -24px -336px; }			.flair-rare-pumpkin:after { content: "Pumpkin"; }
+	.flair-rare-eek:before { background-position: -24px -360px; }			.flair-rare-eek:after { content: "eek!"; }
+	.flair-rare-yoyo:before { background-position: -24px -384px; }			.flair-rare-yoyo:after { content: "Comes right around"; }
+	.flair-rare-sythe:before { background-position: -24px -408px; }			.flair-rare-sythe:after { content: "Sythe"; }
+	.flair-rare-chicken:before { background-position: -24px -432px; }			.flair-rare-chicken:after { content: "Rubber Chicken"; }
+	.flair-rare-brooch:before { background-position: -24px -456px; }			.flair-rare-brooch:after { content: "Bone Brooch"; }
+
+	.flair-rare-ecto:before { background-position: -24px -480px; }			.flair-rare-ecto:after { content: "Ectoplasmator"; }
+	.flair-rare-mackers:before { background-position: -24px -504px; }			.flair-rare-mackers:after { content: "Gobble Gobble"; }
+	.flair-rare-beard:before { background-position: -24px -528px; }			.flair-rare-beard:after { content: "Ho Ho Ho!"; }
+	.flair-rare-egg:before { background-position: -24px -552px; }			.flair-rare-egg:after { content: "Wait, this isn't chocolate..."; }
+	.flair-rare-cegg:before { background-position: -24px -576px; }			.flair-rare-cegg:after { content: "Mmm, Chocolate"; }
+	.flair-rare-eegg:before { background-position: -24px -600px; }			.flair-rare-eegg:after { content: "Ohh, How Colorful"; }
+	.flair-rare-ring:before { background-position: -24px -624px; }			.flair-rare-ring:after { content: "There and back again"; }
+	.flair-rare-bunny:before { background-position: -24px -648px; }			.flair-rare-bunny:after { content: "Hippity Hoppity"; }
+
+        /*------------ 4.1.5 Others ------------*/
+        span[class*="flair-other-"]:before { background-image: url(%%flairs%%); }
+
+	.flair-other-quest:before { background-position: 0px -0px; }		.flair-other-quest:after { content: "Quest"; }
+	.flair-other-distraction:before { background-position: 0px -24px; }	.flair-other-distraction:after { content: "Distraction"; }
+	.flair-other-minigame:before { background-position: 0px -48px; }	.flair-other-minigame:after { content: "Minigame"; }
+	.flair-other-skill:before { background-position: 0px -72px; }		.flair-other-skill:after { content: "Skill"; }
+
+	.flair-other-swords:before { background-position: 0px -96px; }		.flair-other-swords:after { content: "Swords"; }
+	.flair-other-flags:before { background-position: 0px -120px; }		.flair-other-flags:after { content: "Flags"; }
+	.flair-other-music:before { background-position: 0px -144px; }		.flair-other-music:after { content: "Music"; }
+	.flair-other-staff:before { background-position: 0px -168px; }		.flair-other-staff:after { content: "Staff"; }
+	.flair-other-helm:before { background-position: 0px -192px; }		.flair-other-helm:after { content: "Helm"; }
+	.flair-other-chef:before { background-position: 0px -216px; }		.flair-other-chef:after { content: "Chef"; }
+	.flair-other-cake:before { background-position: 0px -240px; }		.flair-other-cake:after { content: "Cake"; }
+
+	.flair-other-task:before { background-position: 0px -264px; }		.flair-other-task:after { content: "Task"; }
+	.flair-other-kendal:before { background-position: 0px -288px; }		.flair-other-kendal:after { content: "The Kendal"; }
+
+	.flair-other-bot:before { background-position: 0px -312px; }		.flair-other-bot:after { content: "Botwatch"; }
+
+	.flair-other-chimes:before { background-position: 0px -336px; }		.flair-other-chimes:after { content: "Chimes"; }
+	.flair-other-bamboo:before { background-position: 0px -360px; }		.flair-other-bamboo:after { content: "Bamboo"; }
+	.flair-other-gunpowder:before { background-position: 0px -384px; }	.flair-other-gunpowder:after { content: "Gunpowder"; }
+	.flair-other-slate:before { background-position: 0px -408px; }		.flair-other-slate:after { content: "Black Slate"; }
+	.flair-other-cherrywood:before { background-position: 0px -432px; }	.flair-other-cherrywood:after { content: "Cherrywood"; }
+	.flair-other-jade:before { background-position: 0px -456px; }		.flair-other-jade:after { content: "Jade"; }
+	.flair-other-steel:before { background-position: 0px -480px; }		.flair-other-steel:after { content: "Stainless Steel"; }
+	.flair-other-ancientbones:before { background-position: 0px -504px; }	.flair-other-ancientbones:after { content: "Ancient Bones"; }
+	.flair-other-plate:before { background-position: 0px -528px; }		.flair-other-plate:after { content: "Plate"; }
+	.flair-other-lacquer:before { background-position: 0px -552px; }	.flair-other-lacquer:after { content: "Lacquer"; }
+	.flair-other-chi:before { background-position: 0px -576px; }		.flair-other-chi:after { content: "Chi"; }
+	.flair-other-spices:before { background-position: 0px -600px; }		.flair-other-spices:after { content: "Spices"; }
+
+	.flair-other-gold:before { background-position: 0px -624px; }		.flair-other-gold:after {content: "Gold Pieces"; }
+
+	.flair-other-mile10:before { background-position: 0px -648px; }		.flair-other-mile10:after {content: "Level 10 Milestone"; }
+	.flair-other-mile20:before { background-position: 0px -672px; }		.flair-other-mile20:after {content: "Level 20 Milestone"; }
+	.flair-other-mile30:before { background-position: 0px -696px; }		.flair-other-mile30:after {content: "Level 30 Milestone"; }
+	.flair-other-mile40:before { background-position: 0px -720px; }		.flair-other-mile40:after {content: "Level 40 Milestone"; }
+	.flair-other-mile50:before { background-position: 0px -744px; }		.flair-other-mile50:after {content: "Level 50 Milestone"; }
+	.flair-other-mile60:before { background-position: 0px -768px; }		.flair-other-mile60:after {content: "Level 60 Milestone"; }
+	.flair-other-mile70:before { background-position: 0px -792px; }		.flair-other-mile70:after {content: "Level 70 Milestone"; }
+	.flair-other-mile80:before { background-position: 0px -816px; }		.flair-other-mile80:after {content: "Level 80 Milestone"; }
+	.flair-other-mile90:before { background-position: 0px -840px; }		.flair-other-mile90:after {content: "Level 90 Milestone"; }
+
+	.flair-other-max:before { background-position: 0px -864px; }		.flair-other-max::after {content: "Maxed";}
+	.flair-other-comp:before { background-position: 0px -888px; }		.flair-other-comp::after {content: "Completionist";}
+	.flair-other-tcomp:before { background-position: 0px -912px; }		.flair-other-tcomp {color: #BD1313; text-shadow: 0px 3px 5px #FFE100; }
+
+	.flair-other-sailing:before { background-position: 0px -936px; }	.flair-other-sailing:after {content: "Ahoy!"; }
+
+	.flair-other-cabbage:before { background-position: 0px -960px; }	.flair-other-cabbage:after {content: "My Cabbages!"; }
+	.flair-other-bronzecabbage:before { background-position: 0px -984px; }
+	.flair-other-silvercabbage:before { background-position: 0px -1008px; }
+	.flair-other-goldcabbage:before { background-position: 0px -1032px; }
+
+	.flair-other-terracotta:before { background-position: 0px -1056px; }	.flair-other-terracotta:after { content: "Terracotta"; }
+	.flair-other-azure:before { background-position: 0px -1080px; }		.flair-other-azure:after { content: "Azure"; }
+
+	.flair-other-dominion:before { background-position: 0px -1104px; }	.flair-other-dominion:after { content: "Boss Slayer"; }
+	.flair-other-crucible:before { background-position: 0px -1128px; }	.flair-other-crucible:after { content: "Bounty Hunter"; }
+    .flair-other-tok:before { background-position: 0px -1152px; }	        .flair-other-tok:after {color: #bd421b;}
+    .flair-other-40k:before { background-position: 0px -1176px; }	        .flair-other-40k:after {content: "40,000 Subscribers!";}
+    .flair-other-50k:before { background-position: 0px -1200px; }	        .flair-other-40k:after {content: "50,000 Subscribers!";}
+
+        /*------------ 4.2 Mod Flairs ------------*/
+        span[class*="flair-mod-"]:before { background-image: url(%%flairs%%); }
+
+	.flair-mod-jagex:before { background-position: -120px 0px; }
+	.flair-mod-jagex {	color: yellow;
+				border-color: yellow;
+				background: -webkit-linear-gradient(top, goldenrod, darkgoldenrod);
+				background: -moz-linear-gradient(top, goldenrod, darkgoldenrod);
+				background: -ms-linear-gradient(top, goldenrod, darkgoldenrod);
+				background: -o-linear-gradient(top, goldenrod, darkgoldenrod);
+				background: linear-gradient(top, goldenrod, darkgoldenrod);
+			 }
+
+	.flair-mod-player:before { background-position: -120px -24px; }
+	.flair-mod-player {	color: white;
+				background: -webkit-linear-gradient(top, lightgrey, darkgrey);
+				background: -moz-linear-gradient(top, lightgrey, darkgrey);
+				background: -ms-linear-gradient(top, lightgrey, darkgrey);
+				background: -o-linear-gradient(top, lightgrey, darkgrey);
+				background: linear-gradient(top, lightgrey, darkgrey);
+			 }
+	.flair-mod-forum:before { background-position: -120px -48px; }
+	.flair-mod-forum {	color: white;
+				border-color: green;
+				background: -webkit-linear-gradient(top, limegreen, darkgreen);
+				background: -moz-linear-gradient(top, limegreen, darkgreen);
+				background: -ms-linear-gradient(top, limegreen, darkgreen);
+				background: -o-linear-gradient(top, limegreen, darkgreen);
+				background: linear-gradient(top, limegreen, darkgreen);
+			 }
+	.flair-mod-local:before { background-position: -120px -72px; }
+	.flair-mod-local {	color: white;
+				border-color: purple;
+				background: -webkit-linear-gradient(top, lightslateblue, darkslateblue);
+				background: -moz-linear-gradient(top, lightslateblue, darkslateblue);
+				background: -ms-linear-gradient(top, lightslateblue, darkslateblue);
+				background: -o-linear-gradient(top, lightslateblue, darkslateblue);
+				background: linear-gradient(top, lightslateblue, darkslateblue);
+			 }
+	.flair-mod-reddit:before { background-position: -120px -96px; }
+	.flair-mod-reddit {	color: white;
+				border-color: red;
+				background: -webkit-linear-gradient(top, tomato, maroon);
+				background: -moz-linear-gradient(top, tomato, maroon);
+				background: -ms-linear-gradient(top, tomato, maroon);
+				background: -o-linear-gradient(top, tomato, maroon);
+				background: linear-gradient(top, tomato, maroon);
+			 }
+	.flair-mod-build:before { background-position: -120px -120px; }
+	.flair-mod-build {	color: white;
+				border-color: blue;
+				background: -webkit-linear-gradient(top, cornflowerblue, darkblue);
+				background: -moz-linear-gradient(top, cornflowerblue, darkblue);
+				background: -ms-linear-gradient(top, cornflowerblue, darkblue);
+				background: -o-linear-gradient(top, cornflowerblue, darkblue);
+				background: linear-gradient(top, cornflowerblue, darkblue);
+			 }
+    /*------------ 4.3 Custom User Flairs ------------*/
+	span[class*="flair-user-"]:before { background-image: url(%%flairs%%); }
+
+	.flair-user-runefestirl:before { background-position: -72px 0px; }
+	.flair-user-runefestnonirl:before { background-position: -72px -24px; }
+	.flair-user-verified:before { background-position: -72px -48px; }
+    .flair-user-runefestirl {
+    background: #f0f9ff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* FF3.6+ */
+    background: -o-linear-gradient(top,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* W3C */
+    color: white;
+    text-shadow: 0px 0px 5px #002229;
+    }
+    .flair-user-verified { background: #9dd53a; /* Old browsers */
+    background: -moz-linear-gradient(top,  #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); /* FF3.6+ */
+    background: -webkit-linear-gradient(top,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* W3C */
+    color: #073802; }
+    .flair-user-2014-best-submission:before,
+    .flair-user-2014-best-comment:before,
+    .flair-user-2014-best-achievement:before,
+    .flair-user-2014-best-helping:before,
+    .flair-user-2014-best-suggestion:before
+    { background-position: -72px -72px }
+    .flair-user-2014-best-submission,
+    .flair-user-2014-best-comment,
+    .flair-user-2014-best-achievement,
+    .flair-user-2014-best-helping,
+    .flair-user-2014-best-suggestion
+    {
+        background: #d2bd7b;
+        background: -moz-linear-gradient(top,  #d2bd7b 0%, #87661b 56%, #67521a 100%);
+        background: -webkit-linear-gradient(top,  #d2bd7b 0%,#87661b 56%,#67521a 100%);
+        background: -o-linear-gradient(top,  #d2bd7b 0%,#87661b 56%,#67521a 100%);
+        background: -ms-linear-gradient(top,  #d2bd7b 0%,#87661b 56%,#67521a 100%);
+        background: linear-gradient(to bottom,  #d2bd7b 0%,#87661b 56%,#67521a 100%);
+        border: 1px solid #c3a755;
+        color: #d3b65c;
+        text-shadow: 0px 0px 5px #3a2f0d;
+    }
+    .flair-user-tuska:before {background-position: -72px -96px} .flair-user-tuska:after {content: "Tuska"}
+    .flair-user-tuska-bronze:before {
+        background-position: -72px -120px
+    }
+    .flair-user-tuska-silver:before {
+        background-position: -72px -144px
+    }
+    .flair-user-tuska-gold:before {
+        background-position: -72px -168px
+    }
+    .flair-user-snoo1:before {
+         background-position: -72px -192px
+    }
+    .flair-user-snoo2:before {
+         background-position: -72px -216px
+    }
+    .flair-user-inventiongold:before,
+    .flair-user-inventionsilver:before,
+    .flair-user-inventionbronze:before
+    { background-position: -48px -648px; }
+    .flair-user-inventiongold
+    {
+        background: #EFD071;
+        background: -moz-linear-gradient(to bottom,  #E2D8B7 0%,#EFD071 56%,#F3C318 100%);
+        background: -webkit-linear-gradient(to bottom,  #E2D8B7 0%,#EFD071 56%,#F3C318 100%);
+        background: -o-linear-gradient(to bottom,  #E2D8B7 0%,#EFD071 56%,#F3C318 100%);
+        background: -ms-linear-gradient(to bottom,  #E2D8B7 0%,#EFD071 56%,#F3C318 100%);
+        background: linear-gradient(to bottom,  #E2D8B7 0%,#EFD071 56%,#F3C318 100%);
+        border: 1px solid #c3a755;
+        color: #F7CF52;
+        text-shadow: 0px 0px 5px #3a2f0d;
+        }
+    .flair-user-inventionsilver
+    {
+        background: #CCCCCC;
+        background: -moz-linear-gradient(to bottom,  #EAEAEA 0%,#E2E2E2 56%,#CCCCCC 100%);
+        background: -webkit-linear-gradient(to bottom,  #EAEAEA 0%,#E2E2E2 56%,#CCCCCC 100%);
+        background: -o-linear-gradient(to bottom,  #EAEAEA 0%,#E2E2E2 56%,#CCCCCC 100%);
+        background: -ms-linear-gradient(to bottom,  #EAEAEA 0%,#E2E2E2 56%,#CCCCCC 100%);
+        background: linear-gradient(to bottom,  #EAEAEA 0%,#E2E2E2 56%,#CCCCCC 100%);
+        border: 1px solid #c3a755;
+        color: #F7F7F7;
+        text-shadow: 0px 0px 5px #3a2f0d;
+        }
+    .flair-user-inventionbronze
+    {
+        background: #9E7E17;
+        background: -moz-linear-gradient(to bottom,  #DAD4C0 0%,#9E7E17 56%,#7B5213 100%);
+        background: -webkit-linear-gradient(to bottom,  #DAD4C0 0%,#9E7E17 56%,#7B5213 100%);
+        background: -o-linear-gradient(to bottom,  #DAD4C0 0%,#9E7E17 56%,#7B5213 100%);
+        background: -ms-linear-gradient(to bottom,  #DAD4C0 0%,#9E7E17 56%,#7B5213 100%);
+        background: linear-gradient(to bottom,  #DAD4C0 0%,#9E7E17 56%,#7B5213 100%);
+        border: 1px solid #c3a755;
+        color: #CCB593;
+        text-shadow: 0px 0px 4px #000000;
+        }
+
+    /*------------ 4.4 Reddit Flair Cracker ------------
+	.side .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(-n+18) {display:none !important;}
+	.side .tagline span:not([class*="flair-rare-"]) ~ .flairselector .flairoptionpane ul li span[class*="flair-rare-"]:after {content: "Pull Me!" !important;}
+	.side .tagline span:not([class*="flair-rare-"]) ~ .flairselector .flairoptionpane ul li span[class*="flair-rare-"]:before {background-position: 0px -672px;}
+	.side .tagline span:not([class*="flair-rare-"]) ~ .flairselector .flairselection span[class*="flair-rare-"]:before {background-position: 0px -672px;}
+
+	.side .tagline a[class$="1 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(1) {display:block !important;}
+	.side .tagline a[class$="2 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(2) {display:block !important;}
+	.side .tagline a[class$="3 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(3) {display:block !important;}
+	.side .tagline a[class$="4 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(4) {display:block !important;}
+	.side .tagline a[class$="5 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(5) {display:block !important;}
+	.side .tagline a[class$="6 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(6) {display:block !important;}
+	.side .tagline a[class$="7 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(7) {display:block !important;}
+	.side .tagline a[class$="8 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(8) {display:block !important;}
+	.side .tagline a[class$="9 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(9) {display:block !important;}
+	.side .tagline a[class$="0 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(10) {display:block !important;}
+	.side .tagline a[class$="a flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(11) {display:block !important;}
+	.side .tagline a[class$="b flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(12) {display:block !important;}
+	.side .tagline a[class$="c flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(13) {display:block !important;}
+	.side .tagline a[class$="d flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(14) {display:block !important;}
+	.side .tagline a[class$="e flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(15) {display:block !important;}
+	.side .tagline a[class$="f flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(16) {display:block !important;}
+	.side .tagline a[class$="g flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(17) {display:block !important;}
+	.side .tagline a[class$="h flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(18) {display:block !important;}
+	.side .tagline a[class$="i flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(1) {display:block !important;}
+	.side .tagline a[class$="j flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(2) {display:block !important;}
+	.side .tagline a[class$="k flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(3) {display:block !important;}
+	.side .tagline a[class$="l flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(4) {display:block !important;}
+	.side .tagline a[class$="m flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(5) {display:block !important;}
+	.side .tagline a[class$="n flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(6) {display:block !important;}
+	.side .tagline a[class$="o flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(7) {display:block !important;}
+	.side .tagline a[class$="p flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(8) {display:block !important;}
+	.side .tagline a[class$="q flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(9) {display:block !important;}
+	.side .tagline a[class$="r flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(10) {display:block !important;}
+	.side .tagline a[class$="s flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(11) {display:block !important;}
+	.side .tagline a[class$="t flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(12) {display:block !important;}
+	.side .tagline a[class$="u flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(13) {display:block !important;}
+	.side .tagline a[class$="v flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(14) {display:block !important;}
+	.side .tagline a[class$="w flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(15) {display:block !important;}
+	.side .tagline a[class$="x flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(16) {display:block !important;}
+	.side .tagline a[class$="y flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(17) {display:block !important;}
+	.side .tagline a[class$="z flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(18) {display:block !important;}
+*/
+/*------------ 2.0 Sidebar ------------*/
+/*.flairselector {
+width: 230px !important;
+left: 100% !important;
+margin-left: -300px;
+}
+.flairoptionpane ul{ margin-top: -8px;}
+.flairoptionpane ul:first-of-type {margin-top:0px;}*/
+    /*------------ 2.1 Announcement ------------*/
+        /*------------ 2.1.1 Top Announcement ------------*/
+
+
+.arrow { width:20px;height:20px;}
+.arrow.up{background: transparent url(%%votes%%) no-repeat 0px 0px;}
+.arrow.down{background: transparent url(%%votes%%) no-repeat 0px -20px;}
+.arrow.upmod{background: transparent url(%%votes%%) no-repeat -20px 0px;}
+.arrow.downmod{background: transparent url(%%votes%%) no-repeat -20px -20px;}
+.comment .midcol, .gadget .midcol {width:20px;margin-right:5px;}
+
+/* SIDEBAR STYLING */
+
+.titlebox blockquote {
+border: 1px solid #AAA;
+text-shadow: 0 1px 0 white;
+background-repeat: repeat-x;
+padding-left: 8px;
+padding-right: 8px;
+padding-top: 2px;
+padding-bottom: 2px;
+font-size: 0.85em;
+color: #777;
+font-weight: bold;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px
+}
+
+.res-nightmode .titlebox blockquote {
+text-shadow: none !important;
+}
+
+.sidecontentbox .content, .linkinfo, .footer {
+background: #FAFAFA;
+border: 1px solid #CDCDCD;
+margin: 7px 0 0;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px
+}
+
+.footer {
+ margin:0 auto;
+}
+
+/* CONTENT */
+
+.content {
+padding-top: 4px;
+}
+
+/* REPORT BUTTON (from /r/gaming) */
+
+.entry .flat-list .report-button a,
+.res-nightmode .entry .flat-list .report-button a {
+    color: #b20000;
+}
+
+.report-button:hover:before {
+position: absolute;
+display: block;
+z-index: 1000;
+padding: 5px;
+border: 1px solid #333;
+background: #1d1212;
+color: #f6f6f6;
+font-size: 11px;
+content: "Please only report posts that violate the subreddit's rules.";
+font-weight: normal;
+margin-top: -25px
+}
+
+/* SUBMISSION PAGE */
+
+.formtabs-content {
+border-top: 3px solid #302720;
+}
+
+.tabmenu li a{
+border: none !important;
+margin-right: 1px;
+font-size: 12px !important;
+}
+
+.formtabs-content .roundfield {
+background: #302720;
+color: #F3B13F;
+}
+
+.formtabs-content .roundfield a {
+color: #9b866c;
+}
+
+.formtabs-content .roundfield a:hover {
+text-decoration: underline;
+}
+
+
+.formtabs-content #text-desc, .formtabs-content #link-desc {
+text-indent: -9999px;
+}
+
+#link-desc:after, #text-desc:after {
+display: block;
+text-indent: 0;
+margin-top: -1em;
+font-size: 18px;
+font-family: Arial;
+color: red;
+font-weight: bold;
+content: "Please read the statement below.";
+}
+
+.formtabs-content #link-desc:after {
+display: block;
+text-indent: 0;
+margin-top: -1em;
+font-size: 18px;
+font-family: Arial;
+color: red;
+font-weight: bold;
+content: "Please read the statement below."
+}
+
+/* This adds a little info box about downvoting, Credit to r/MineCraft */
+.commentarea > div.sitetable:before {
+    content: "Please do not downvote comments based on personal opinion. Remember to follow Reddiquette when voting on comments/posts.";
+    display: block;
+    margin: 0px 315px 10px 10px;
+    background-color: #FFFFDC;
+    padding: 8px;
+    font-size: 13px;
+    border: 1px solid #C8C864;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px
+    }
+
+/* This adds some background color to blockquotes, also r/Minecraft */
+body:not(.res-nightmode) .commentarea .md blockquote {
+    background-color: #FAFAFA
+    }
+body:not(.res-nightmode) .commentarea .new-comment .md blockquote {
+    background-color: #EDF4FF
+    }
+body:not(.res-nightmode) .commentarea .usertext.border .md blockquote {
+    background-color: #FFFFED
+    }
+.res-nightmode div.gold-accent, .res-nightmode .commentarea > div.sitetable:before {
+    background-color: grey !important;
+    border: 1px solid black;
+    color: black !important
+    }
+
+
+/* Hover image over a users name */
+.author { position: relative; }
+.author:hover:after {
+    position: absolute;
+    left: 105%;
+    top: 0;
+}
+
+.login-form-side .submit {
+float: none !important;
+vertical-align: middle;
+}
+
+.submit{width:299px;}        /*Restores full width*/
+
+.comment .entry  { overflow: visible; }
+.comment .usertext { overflow: hidden; clear: none!important;}
+
+.linkflairlabel {
+        padding: 0px 2px 0px 2px;
+        border: 1px solid gray;
+        font-weight: bold;
+        vertical-align:middle;
+    }
+
+.linkflair-red .linkflairlabel {
+   border-color: red;
+   color: red;
+}
+
+.linkflair-alert .linkflairlabel {
+   border-color: red;
+   color: red;
+}
+
+.linkflair-runelab .linkflairlabel {
+   border-color: #eac978;
+   color: #af8009;
+}
+
+.res-nightmode .linkflair-runelab .linkflairlabel {
+background-color: #ffe094;
+}
+
+.linkflair-green .linkflairlabel {
+   border-color: green;
+   color: green;
+}
+
+.linkflair-ninja .linkflairlabel {
+   border-color: black;
+   color: black;
+}
+
+html:lang(re) .link:not(.linkflair-ninja) {
+    display: none    }
+
+html:lang(of) .listing-page .linkflair-ninja{
+    display: none    }
+
+.side a[href*='#of'], .side a[href*='#en']{
+    display: inline-block;
+    position: relative;
+    margin-top:0px;
+    border: 1px solid #c8c8c8;
+    font-size: 100%;
+    padding: 3px;
+    color: black;
+    width: 150px;
+    font-weight: bold;
+    background: #e0e0e0;
+    min-width: 135px;
+    text-align: center;
+    text-shadow: 1px 1px 0px white;
+}
+
+.side a[href*='#of']:hover, .side a[href*='#en']:hover{
+  background: #f4f4f4;
+}
+
+/* Upvote XP */
+/* Created by /u/Ethaskus */
+/* Credit to /u/WillAteUrFace */
+
+.thing .upmod:focus::after
+{
+    content:"";
+    font-size: 10px;
+    font-family: Trajan Pro, "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    color: orange;
+    text-shadow: 1px 1px 1px black,
+            -1px 1px 1px black,
+            -1px -1px 1px black,
+             1px -1px 1px black,
+             0px 0px 3px black;
+    display:block;
+    position: absolute;
+    animation: upvote 1.5s ease-out;
+    -webkit-animation: upvote 2s ease-out;
+    opacity:0;
+    z-index:9001;
+}
+@keyframes upvote
+{
+    0% {margin-top:22px;opacity:1;}
+    25%{opacity:1;}
+    100% {margin-top:-80px;opacity:0;}
+}
+@-webkit-keyframes upvote
+{
+    0% {margin-top:22px;opacity:1;}
+    25%{opacity:1;}
+    100% {margin-top:-80px;opacity:0;}
+}
+
+.thing[data-fullname$="a"] .upmod:focus::after { content: "+1 XP"; }
+.thing[data-fullname$="b"] .upmod:focus::after { content: "+23 XP"; }
+.thing[data-fullname$="c"] .upmod:focus::after { content: "+5 XP"; }
+.thing[data-fullname$="d"] .upmod:focus::after { content: "+6 XP"; }
+.thing[data-fullname$="e"] .upmod:focus::after { content: "Miss"; }
+.thing[data-fullname$="f"] .upmod:focus::after { content: "+57 XP"; }
+.thing[data-fullname$="g"] .upmod:focus::after { content: "+120 XP"; }
+.thing[data-fullname$="h"] .upmod:focus::after { content: "+99 XP"; }
+.thing[data-fullname$="i"] .upmod:focus::after { content: "+9001 XP"; }
+.thing[data-fullname$="j"] .upmod:focus::after { content: "Lots!"; }
+.thing[data-fullname$="k"] .upmod:focus::after { content: "+69 XP"; }
+.thing[data-fullname$="l"] .upmod:focus::after { content: "hunter2"; }
+.thing[data-fullname$="m"] .upmod:focus::after { content: "Basically Zezima"; }
+.thing[data-fullname$="n"] .upmod:focus::after { content: "Party!"; }
+.thing[data-fullname$="o"] .upmod:focus::after { content: "+1 XP"; }
+.thing[data-fullname$="p"] .upmod:focus::after { content: "Say that to my main"; }
+.thing[data-fullname$="q"] .upmod:focus::after { content: "+1 XP"; }
+.thing[data-fullname$="r"] .upmod:focus::after { content: "+1 XP"; }
+.thing[data-fullname$="s"] .upmod:focus::after { content: "Nothing interesting happens"; }
+.thing[data-fullname$="t"] .upmod:focus::after { content: "All I got was this silly hat"; }
+.thing[data-fullname$="u"] .upmod:focus::after { content: "+1 XP"; }
+.thing[data-fullname$="v"] .upmod:focus::after { content: "+1 XP"; }
+.thing[data-fullname$="w"] .upmod:focus::after { content: "Eugh, cabbage"; }
+.thing[data-fullname$="x"] .upmod:focus::after { content: "Doubling money"; }
+.thing[data-fullname$="y"] .upmod:focus::after { content: "+295 XP"; }
+.thing[data-fullname$="z"] .upmod:focus::after { content: "Stamp please"; }
+.thing[data-fullname$="1"] .upmod:focus::after { content: "share I tb'd"; }
+.thing[data-fullname$="2"] .upmod:focus::after { content: "Dancing for GP"; }
+.thing[data-fullname$="3"] .upmod:focus::after { content: "Buying gf"; }
+.thing[data-fullname$="4"] .upmod:focus::after { content: "+1 XP"; }
+.thing[data-fullname$="5"] .upmod:focus::after { content: "+348 XP"; }
+.thing[data-fullname$="6"] .upmod:focus::after { content: "+279 XP"; }
+.thing[data-fullname$="7"] .upmod:focus::after { content: "Trouble Brewing anyone?"; }
+.thing[data-fullname$="8"] .upmod:focus::after { content: "I'm back, what's changed?"; }
+.thing[data-fullname$="9"] .upmod:focus::after { content: "+200M XP"; }
+.thing[data-fullname$="0"] .upmod:focus::after { content: "+10 XP"; }
+
+.submit_text span .md p{
+color: white !important;
+}
+
+/*------------------------------------
+NIGHTMODE RES
+------------------------------------*/
+
+.res-nightmode .thumbnail {
+background-color: rgb(187,187,187) !important;
+}
+
+/*---------------------------------------
+ Christmas Stoof
+---------------------------------------*/
+/*
+.sitetable .thing.id-t3_2nxn4n, .sitetable .thing.id-t3_2pgtjr  {
+width: calc( 100% - 324px );
+}
+
+.sitetable .thing.id-t3_2nxn4n a.title:after {
+content: " - Today's prize: A Gaming Laptop";
+-webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 2;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: 2;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+.res-nightmode .thing.id-t3_2nxn4n > * {
+text-shadow: none !important;
+}
+
+.sitetable .thing.id-t3_2nxn4n  > * {
+    text-shadow:
+    -1px -1px 0 #fff,
+    0px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    0px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+.sitetable .thing.id-t3_2nxn4n .flair, .author.friend {
+text-shadow: none !important;
+}
+
+.thing.id-t3_2nxn4n  {
+background-image: url(%%snow-right%%);
+background-position: right top;
+background-repeat: no-repeat;
+}
+
+.thing.id-t3_2nxn4n .entry, .thing.id-t3_2nxuux .RES-keyNav-activeElement, .thing.id-t3_2pgtjr .entry, .thing.id-t3_2pgtjr .RES-keyNav-activeElement{
+background-color: transparent !important;
+}
+
+.thing.id-t3_2nxn4n .usertext .usertext-body .md{
+padding: 66px;
+background-image: url(%%xmas-topleft%%), url(%%xmas-topright%%), url(%%xmas-presents%%);
+background-position: left top, right top, bottom right;
+background-repeat: no-repeat;
+}
+*/
+/*---------------------------------------
+ Christmas Stoof - Snow - Credit to /r/globaloffensive
+---------------------------------------*/
+/*
+#header-bottom-left {
+    height: 150px !important;
+    background-color: transparent;
+    background-image: url(%%flake1%%), url(%%flake2%%), url(%%flake3%%);
+    -webkit-animation: snow 20s linear infinite;
+    -moz-animation: snow 20s linear infinite;
+    -ms-animation: snow 20s linear infinite;
+    animation: snow 20s linear infinite;
+}
+
+@-webkit-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+@-moz-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+@-ms-keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+@keyframes snow {
+    0% { background-position: 0px 0px, 0px 0px, 0px 0px }
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+*/
+
+/*---------------------------------------
+Various bits and bobs
+---------------------------------------*/
+
+/*.linkflair-alert .linkflairlabel {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+font-size: 14px;
+}*/
+
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+/* SIDEBAR FILTER */
+
+html:lang(nj) .listing-page .linkflair-ninja, html:lang(nj) .listing-page .linkflair-suggestion, html:lang(rl) .listing-page .linkflair-runelab, html:lang(of) .listing-page .linkflair-runelab, html:lang(of) .listing-page .linkflair-ninja, html:lang(of) .listing-page .linkflair-suggestion{
+    display: none    }
+
+
+.side table:nth-of-type(1) thead {
+    display: none;
+}
+
+.side table:nth-of-type(1) {
+background-image: url(%%content-repeat%%);
+color: #e1bb34;
+border: 1px solid black;
+}
+
+.side table:nth-of-type(1) {
+list-style-type: none;
+}
+
+.side table:nth-of-type(1) a {
+font-weight: bold;
+text-decoration: underline;
+color: #d7dbe1;
+}
+
+.side table:nth-of-type(1) a:hover {
+color: #e1bb34;
+}
+
+.side table:nth-of-type(1) tbody tr {
+    display: list-item;
+}
+
+.side table:nth-of-type(1) tbody tr td {
+    display: block;
+    border: none;
+    padding: 0;
+}
+
+.side table:nth-of-type(1) tbody tr td:first-child {
+    padding: 8px;
+    border-top: 1px solid #39444b;
+    border-bottom: 1px solid black;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.side table:nth-of-type(1) tbody tr td:first-child:hover, .side table tbody tr:hover td:first-child {
+    background-color: rgba(0,0,0,0.5);
+}
+
+/*Nothing to see here!*/
+/* Up up down down left right left right B A enter */
+#baconBit {
+	position: fixed;
+ 	width: 339px!important;
+ 	height: 442px!important;
+ 	background-image: url(%%dave%%)!important;
+ 	top: -5%;
+ 	left: -5%;
+ 	z-index: 999999;
+ 	-webkit-transform: scale(3,3), rotate(0deg);
+ 	-moz-transform: scale(3,3) rotate(0deg);
+        transform: scale(3,3), rotate(0deg);
+	}
+#baconBit.makeitrain {
+ 	top: 100%;
+ 	left: 100%;
+ 	-webkit-transform: rotate(360deg);
+ 	-moz-transform: rotate(360deg);
+	}
+#baconBit {
+      -webkit-transition: all 10s linear !important;
+      -moz-transition: all 10s linear !important;
+      -o-transition: all 10s linear !important;
+      -ms-transition: all 10s linear !important;
+}
+
+.neverEndingReddit {
+    width: calc(100% - 400px) !important;
+}
+
+/* CREDIT TO /r/globaloffensive */
+/* Reports */
+
+
+
+/*bxp shenanigans
+@keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+@-webkit-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+ 100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+#header #header-bottom-left {
+    height: 150px;
+	background-image: url('%%con1%%'), url('%%con4%%'), url('%%con2%%'), url('%%con3%%');
+	-webkit-animation: snow 20s linear infinite;
+	-moz-animation: snow 20s linear infinite;
+	-ms-animation: snow 20s linear infinite;
+	-o-animation: snow 20s linear infinite;
+	animation: snow 20s linear infinite;
+}/*
+
+/* GAMEBLAST */
+
+.linkflair-reply a.title:after{content:url(%%reply%%);margin-left:5px}
+.linkflair-reply .linkflairlabel{display:none}
+.linkflair-reply.linkflair-runelab .linkflairlabel {display:initial}
+.linkflair-reply.linkflair-ninja .linkflairlabel {display:initial}
+.linkflair-reply.linkflair-red .linkflairlabel {display:initial}
