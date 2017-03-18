@@ -404,7 +404,8 @@
             background: url(%%sprite-btn%%) repeat-x 0 -102px;
     
             color: black;
-            text-shadow: 1px 1px 1px #dcb421;
+            /*text-shadow: 1px 1px 1px #dcb421;*/
+           
             text-transform: none;
             font-weight: bold;
             font-size:16px;
@@ -511,8 +512,8 @@
         
         .side .usertext .md h2 {
             background: url(%%sprite%%) no-repeat;
-            background-position: -2px -291px;;
-            padding: 0 0 0 35px;
+            background-position: -2px -291px;
+            padding: 0 0 0 52px;
             height: 39px;
             margin: 0;
             position: relative;
@@ -532,7 +533,7 @@
             width: calc(100% - 90px);
             z-index: -1;
             height: 39px;
-            background: url(%%bg-header-small%%) repeat-x;
+            background: url(%%bg-header-small-2%%) repeat-x;
         }
         
         .side .usertext .md h2:after {
@@ -573,11 +574,11 @@
         .sidecontentbox ul.content {
             overflow: visible;
         }
-        
-        .beta-hint a {
-            right: -25px;
+
+        .beta-hint {
+            display: none;
         }
-        
+
         @media all and (max-device-width: 640px) {
             body:not(.loggedin) .side .usertext .md h2:nth-of-type(2) {
                 margin-top: 110px;
@@ -645,11 +646,159 @@
                 display: none;
             }
         }
+/*------------ 2.2.1 Voice Of Seren ------------*/
+        .side .md ol:nth-of-type(1)  {
+            display: table;
+            width: 100%;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background: url(%%side-content-bg%%) repeat;
+            border: 1px solid #33383a;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+        }
+
+        .side .md ol:nth-of-type(1) li  {
+            display: table-cell;
+        }
+
+        .side .md ol:nth-of-type(1) li a {
+            display: block;
+            text-align: center;
+            padding: 8px 0;
+        }
+
+        .side .md ol:nth-of-type(1) li a:before {
+            display: block;
+            content: "";
+            height: 86px;
+            background: url(%%vos%%);
+            top: 0;
+            left: 0; 
+            right: 0; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+
+
+        .side .md ol:nth-of-type(1) li a[href$="#amlodd"]:before {
+            background-position: 0 0;
+            width: 62px;
+        }
+
+        .side .md ol:nth-of-type(1) li a[href$="#cadarn"]:before {
+            background-position: -62px 0;
+            width: 75px;
+        }
+
+        .side .md ol:nth-of-type(1) li a[href$="#crwys"]:before {
+            background-position: -137px 0;
+            width: 70px;
+        }
+
+        .side .md ol:nth-of-type(1) li a[href$="#hefin"]:before {
+            background-position: -205px 0;
+            width: 68px;
+        }
+
+        .side .md ol:nth-of-type(1) li a[href$="#iorwerth"]:before {
+            background-position: -266px 0;
+            width: 90px;
+        }
+
+        .side .md ol:nth-of-type(1) li a[href$="#ithell"]:before {
+            background-position: -353px 0;
+            width: 87px;
+        }
+
+        .side .md ol:nth-of-type(1) li a[href$="#meilyr"]:before {
+            background-position: -434px 0;
+            width: 58px;
+        }
+
+        .side .md ol:nth-of-type(1) li a[href$="#trahaearn"]:before {
+            background-position: -486px 0;
+            width: 63px;
+        }
+
+     /*------------ 2.2.2 Game Updates ------------*/
+        .side .md ol:nth-of-type(2)  {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            background: url(%%side-content-bg%%) repeat;
+            border: 1px solid #33383a;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .side .md ol:nth-of-type(2) li  {
+            counter-increment: step-counter;
+            position: relative;
+            padding: 10px 10px 10px 60px;
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        .side .md ol:nth-of-type(2) li:before  {
+            position: absolute;
+            content: counter(step-counter);
+            margin-right: 5px;
+            font-size: 80%;
+            color: #aed0e0;
+            padding: 8px 10px;
+            border-radius: 20px;
+            left: 15px;
+            font-style: normal;
+            font-size: 15px;
+            z-index: 6;
+            background: #355563;
+        }
+
+        .side .md ol:nth-of-type(2) li:after  {
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 100%;
+            background: #355563;
+            left: 29px;
+            z-index: 5;
+            top: 10px;
+        }
+
+        .side .md ol:nth-of-type(2) li:last-of-type:after {
+            display: none;
+        }
+
+        .side .md ol:nth-of-type(2) li a {
+            display: block;
+            padding-right: 10px;
+            background: none;
+            border: none;
+            color: #E1BB34 !important;
+            font-size: 15px;
+            font-style: normal;
+            padding: 2px 0;
+            
+        }
+
+        .side .md ol:nth-of-type(2) li a:hover {
+            color: #FFF2C5 !important;
+        }
+
+        .side .md ol:nth-of-type(2) li a:after {
+            display: none;
+        }
+
+        
     
+   
     /*------------ 2.3 Alerts ------------*/
         @media all and (min-device-width: 640px) {
             .side { position: relative; }
-            .side .md ol  {
+            .side .md ol:nth-of-type(3)  {
                 position: absolute;
                 top: -140px;
                 left: -418px;
@@ -663,19 +812,19 @@
             
             @media screen and (max-width: 1200px) { 
     
-                .side .md ol {
+                .side .md ol:nth-of-type(3) {
                     display: none;
                 }
     
             }
     
-            .side .md ol li  {
+            .side .md ol:nth-of-type(3) li  {
                 padding: 2px 0 10px 0;
                 text-align: right;
             }
             
             
-            .side .md ol li a {
+            .side .md ol:nth-of-type(3) li a {
                 position: relative;
                 background: url(%%strap-bg%%);
                 padding: 8px 90px 8px 8px;
@@ -687,11 +836,11 @@
                 transition: all 0.25s;
             }
             
-            .side .md ol li a:hover {
+            .side .md ol:nth-of-type(3) li a:hover {
                 color: #E1BB34;
             }
             
-            .side .md ol li a:after {
+            .side .md ol:nth-of-type(3) li a:after {
                 position: absolute;
                 content: "";
                 width: 75px !important;
@@ -706,11 +855,11 @@
                 padding :0;
             }
             
-            .side .md ol:first-of-type li a[href$="#stream"]:after {
+            .side .md ol:nth-of-type(3) li a[href$="#stream"]:after {
                 background-position: 0 0;
             }
             
-            .side .md ol:first-of-type li a[href$="#stream"]:before {
+            .side .md ol:nth-of-type(3) li a[href$="#stream"]:before {
                 position: absolute;
                 content: "";
                 width: 15px;
@@ -724,7 +873,7 @@
                 z-index: 2147483647;
             }
             
-            .side .md ol:first-of-type li a[href$="#stream"]:hover:before {
+            .side .md ol:nth-of-type(3) li a[href$="#stream"]:hover:before {
                 animation-play-state: paused;
             }
             
@@ -733,29 +882,29 @@
                 50% { opacity: 1 }
             }
             
-            .side .md ol:first-of-type li a[href$="#notice"]:after {
+            .side .md ol:nth-of-type(3) li a[href$="#notice"]:after {
                 background-position: 0 -31px;
             }
             
-            .side .md ol:first-of-type li a[href$="#event"]:after {
+            .side .md ol:nth-of-type(3) li a[href$="#event"]:after {
                 background-position: 0 -62px;
             }
             
-            .side .md ol li a[href$="#dxp"]:after {
-                background-position: 0 -93px !important;
+            .side .md ol:nth-of-type(3) li a[href$="#dxp"]:after {
+                background-position: 0 -93px;
  
             }
             
-            .side .md ol:first-of-type li a[href$="#jmod"]:after {
+            .side .md ol:nth-of-type(3) li a[href$="#jmod"]:after {
                 background-position: 0 -124px;
             }
             
-            .side .md ol:first-of-type li a[href$="#reset"]:after {
+            .side .md ol:nth-of-type(3) li a[href$="#reset"]:after {
                 background-position: 0 -155px;
             }
         }
         @media all and (max-device-width: 640px) {
-            .side .md ol {
+            .side .md ol:nth-of-type(3) {
                 display: none;
             }
         }
@@ -1259,8 +1408,7 @@
             height: 480px;
             background: url(%%bts%%) no-repeat;
             background-position: 0 0;
-            /* animation: lineH 1s steps(13) infinite, lineV 4s steps(4) infinite; */
-            animation: lineH 2s steps(13) infinite, lineV 4s steps(4) infinite;
+            animation: lineH 1s steps(13) infinite, lineV 4s steps(4) infinite;
             top: 0;
             left: 0;
             animation-play-state: paused;
@@ -1299,7 +1447,7 @@
            -webkit-transition: opacity .25s ease-in-out;
         }
         
-/* BTS UPDATED */
+/* BTS UPDATED 
         .side .usertext .md a[href$="#BTS"]:after {
             background: url(%%play-btn-update%%) no-repeat;
             background-position: 0 0;
@@ -1312,8 +1460,8 @@
 
         .side .usertext .md a[href$="#BTS"]:hover:after {
             animation-play-state: paused;
-            opacity: 0.5;
         }
+*/
 
             @keyframes flash2 {
             0%,100% { opacity: 0.5 }
@@ -1332,6 +1480,7 @@
                 top: -480px;
             }
         }
+
         
 /*------------ 3.0 Content ------------*/
     /*------------ 3.1 Body ------------*/
@@ -1339,6 +1488,25 @@
             padding-top: 4px;
             overflow: hidden;
             margin: 5px 10px;
+        }
+
+        div[id*="_main_top"],
+        div[id*="ad_main"] {
+            padding-bottom:15px;
+        }
+
+        div[id*="_main_top"]:after,
+        div[id*="ad_main"]:after {
+            content: "advertisement";
+            text-align: center;
+            display: block;
+        }
+
+        div[class^="organic-list"] .flat-list:after {
+            content: "This advertisement is not controlled by /r/runescape";
+            padding: 2px 5px;
+            color: #bababa;
+            display: block;
         }
 
         .arrow { width:20px;height:20px;}
@@ -1478,15 +1646,21 @@
         }
 
         .footer-parent {
-            background: url(%%get-bond%%) no-repeat bottom center;
-            height: 200px; /* blaze it */
-            padding-top: 80px;
-            padding-bottom: 40px;
+            background: url(%%dave-1%%) no-repeat bottom center;
+            background-size: 355px 500px;
+            height: 690px;
+            padding-top: 0;
+            /*padding-bottom: 40px;*/
             clear: both;
             text-align: center;
             width: 100%;
             margin-bottom: -1px;
             opacity: 0.8;
+        }
+
+        .footer-parent:hover {
+            background: url(%%dave-2%%) no-repeat bottom center;
+            background-size: 355px 500px;
         }
 
 /*------------ 4.0 Flairs ------------*/
@@ -1694,6 +1868,8 @@
             .flair-other-tcomp:before { background-position: 0px -912px; }      .flair-other-tcomp {color: #BD1313; text-shadow: 0px 3px 5px #FFE100; }
             .flair-other-sailing:before { background-position: 0px -936px; }    .flair-other-sailing:after {content: "Ahoy!"; }
             .flair-other-cabbage:before { background-position: 0px -960px; }    .flair-other-cabbage:after {content: "My Cabbages!"; }
+            .flair-other-ironman:before { background-position: -72px -288px; }    .flair-other-ironman:after { content: "Ironman"; }
+            .flair-other-hardcore:before { background-position: -72px -312px; }       .flair-other-hardcore:after { content: "Hardcore Ironman"; }
             .flair-other-bronzecabbage:before { background-position: 0px -984px; }
             .flair-other-silvercabbage:before { background-position: 0px -1008px; }
             .flair-other-goldcabbage:before { background-position: 0px -1032px; }
@@ -1904,24 +2080,60 @@
                 content: " - 09/2016 DXP Competition Top 30";
                 display: none;
             }
+
+            .flair-user-dxpgold-feb2017:after {
+                content: " - 02/2017 DXP Competition Winner";
+                display: none;
+            }
+            .flair-user-dxpsilver-feb2017:after {
+                content: " - 02/2017 DXP Competition 2nd Place";
+                display: none;
+            }
+            .flair-user-dxpbronze-feb2017:after {
+                content: " - 02/2017 DXP Competition 3rd Place";
+                display: none;
+            }
+            .flair-user-dxptop30-feb2017:after {
+                content: " - 02/2017 DXP Competition Top 25";
+                display: none;
+            }            
+            .flair-user-dxptop30-feb2017:hover,
+            .flair-user-dxpgold-feb2017:hover,
+            .flair-user-dxpsilver-feb2017:hover,
+            .flair-user-dxpbronze-feb2017:hover,
+            .flair-user-dxptop30:hover,
+            .flair-user-dxpgold:hover,
+            .flair-user-dxpsilver:hover,
+            .flair-user-dxpbronze:hover{
+
+            }
+            .flair-user-dxptop30-feb2017:hover:after,
+            .flair-user-dxpgold-feb2017:hover:after,
+            .flair-user-dxpsilver-feb2017:hover:after,
+            .flair-user-dxpbronze-feb2017:hover:after,
             .flair-user-dxptop30:hover:after,
             .flair-user-dxpgold:hover:after,
             .flair-user-dxpsilver:hover:after,
             .flair-user-dxpbronze:hover:after {
             display: inline;
             }
+            .flair-user-dxpgold-feb2017:before,
             .flair-user-dxpgold:before {
                 background-position: -72px -192px;
             }
+            .flair-user-dxpsilver-feb2017:before,
             .flair-user-dxpsilver:before {
                 background-position: -72px -216px;
             }
+            .flair-user-dxpbronze-feb2017:before,
             .flair-user-dxpbronze:before {
                 background-position: -72px -240px; 
             }
+            .flair-user-dxptop30-feb2017:before,
             .flair-user-dxptop30:before {
                 background-position: -72px -264px; 
             }
+            .flair-user-dxpgold-feb2017,
             .flair-user-dxpgold
             {
                 background: #F09819; /* fallback for old browsers */
@@ -1931,6 +2143,7 @@
                 color: white;
                 text-shadow: 0px 0px 5px #3a2f0d;
                 }
+            .flair-user-dxpsilver-feb2017,
             .flair-user-dxpsilver
             {
                 background: #CCCCCC;
@@ -1943,6 +2156,7 @@
                 color: white;
                 text-shadow: 0px 0px 5px #3a2f0d;
                 }
+            .flair-user-dxpbronze-feb2017,
             .flair-user-dxpbronze
             {
                 background: #9E7E17;
@@ -1958,6 +2172,10 @@
             .flair-other-40k:before { background-position: 0px -1176px; }           .flair-other-40k:after {content: "40,000 Subscribers!";}
             .flair-other-50k:before { background-position: 0px -1200px; }           .flair-other-50k:after {content: "50,000 Subscribers!";}
             .flair-other-60k:before { background-position: -126px -147px; width: 38px !important; height: 18px !important; margin: -5px 1px !important; }      .flair-other-60k:after {content: "60,000 Subscribers!";}
+            .flair-other-75k:before { background-position: -126px -169px;  width: 38px !important;  height: 18px !important;  margin: -5px 1px !important;  }  .flair-other-75k:after {content: "75,000 Subscribers!";}
+
+            .flair-user-prezleek { border: 0 !important; background: transparent !important; }
+            .flair-user-prezleek:before { background-position: -72px -1200px; width: 90px!important; } 
 
     /*------------ 4.4 Other Flairs ------------*/
 
@@ -2073,51 +2291,6 @@
                     display:none;
                 }
 
-    /*------------ 4.5 Special Events ------------*/
-
-        /*------------ 4.5.1 Reddit Flair Cracker ------------*/
-            /*
-            .side .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(-n+18) {display:none !important;}
-            .side .tagline span:not([class*="flair-rare-"]) ~ .flairselector .flairoptionpane ul li span[class*="flair-rare-"]:after {content: "Pull Me!" !important;}
-            .side .tagline span:not([class*="flair-rare-"]) ~ .flairselector .flairoptionpane ul li span[class*="flair-rare-"]:before {background-position: 0px -672px;}
-            .side .tagline span:not([class*="flair-rare-"]) ~ .flairselector .flairselection span[class*="flair-rare-"]:before {background-position: 0px -672px;}
-
-            .side .tagline a[class$="1 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(1) {display:block !important;}
-            .side .tagline a[class$="2 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(2) {display:block !important;}
-            .side .tagline a[class$="3 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(3) {display:block !important;}
-            .side .tagline a[class$="4 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(4) {display:block !important;}
-            .side .tagline a[class$="5 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(5) {display:block !important;}
-            .side .tagline a[class$="6 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(6) {display:block !important;}
-            .side .tagline a[class$="7 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(7) {display:block !important;}
-            .side .tagline a[class$="8 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(8) {display:block !important;}
-            .side .tagline a[class$="9 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(9) {display:block !important;}
-            .side .tagline a[class$="0 flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(10) {display:block !important;}
-            .side .tagline a[class$="a flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(11) {display:block !important;}
-            .side .tagline a[class$="b flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(12) {display:block !important;}
-            .side .tagline a[class$="c flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(13) {display:block !important;}
-            .side .tagline a[class$="d flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(14) {display:block !important;}
-            .side .tagline a[class$="e flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(15) {display:block !important;}
-            .side .tagline a[class$="f flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(16) {display:block !important;}
-            .side .tagline a[class$="g flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(17) {display:block !important;}
-            .side .tagline a[class$="h flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(18) {display:block !important;}
-            .side .tagline a[class$="i flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(1) {display:block !important;}
-            .side .tagline a[class$="j flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(2) {display:block !important;}
-            .side .tagline a[class$="k flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(3) {display:block !important;}
-            .side .tagline a[class$="l flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(4) {display:block !important;}
-            .side .tagline a[class$="m flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(5) {display:block !important;}
-            .side .tagline a[class$="n flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(6) {display:block !important;}
-            .side .tagline a[class$="o flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(7) {display:block !important;}
-            .side .tagline a[class$="p flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(8) {display:block !important;}
-            .side .tagline a[class$="q flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(9) {display:block !important;}
-            .side .tagline a[class$="r flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(10) {display:block !important;}
-            .side .tagline a[class$="s flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(11) {display:block !important;}
-            .side .tagline a[class$="t flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(12) {display:block !important;}
-            .side .tagline a[class$="u flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(13) {display:block !important;}
-            .side .tagline a[class$="v flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(14) {display:block !important;}
-            .side .tagline a[class$="w flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(15) {display:block !important;}
-            .side .tagline a[class$="x flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(16) {display:block !important;}
-            .side .tagline a[class$="y flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(17) {display:block !important;}
-            .side .tagline a[class$="z flairselectable"] ~ .flairselector .flairoptionpane ul:last-of-type li:nth-last-child(18) {display:block !important;}*/
             
 /*------------ 1337 RES ------------*/
 
@@ -2148,7 +2321,7 @@
         
         #header-bottom-right .pref-lang, 
         #header-bottom-right .userbarHide, 
-        #header-bottom-right > .separator:nth-of-type(4)  {
+        #header-bottom-right > .separator:nth-of-type(5)  {
             display: none !important;
         }
         
@@ -2286,4 +2459,3 @@ padding-top: 135px;
    content:"stickied post";
    font-size: x-small;
 }
-            
